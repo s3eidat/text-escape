@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' data: blob:; connect-src 'self' data: blob:; worker-src 'self' blob:; manifest-src 'self'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Text Escape — Free String Escape &amp; Unescape for JSON, JS, HTML, URL, SQL, CSV | S3eidat Tools</title>
+<meta name="description" content="Escape and unescape strings for JSON, JavaScript, HTML entities, XML, URLs, SQL, CSV, regex, shell, C, Java and Unicode escapes. Live, both directions, copy in one click. Free, private, runs in your browser.">
+<meta property="og:title" content="Text Escape — escape and unescape strings for code">
+<meta property="og:description" content="12 escaping modes, both directions. Runs 100% in your browser.">
+<link rel="icon" href="kit/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="kit/kit.css">
+<link rel="stylesheet" href="app.css">
+<script src="kit/kit.js"></script>
+<!--s3:seo-->
+<link rel="canonical" href="https://s3eidat.github.io/text-escape/">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0d0f12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="S3eidat Tools">
+<meta property="og:url" content="https://s3eidat.github.io/text-escape/">
+<meta property="og:image" content="https://s3eidat.github.io/text-escape/screenshot.png">
+<meta property="og:image:width" content="1280"><meta property="og:image:height" content="800">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Text Escape — Escape and unescape strings for code">
+<meta name="twitter:description" content="Escape and unescape strings for code. Free, private and runs 100% in your browser: no sign-up, no uploads.">
+<meta name="twitter:image" content="https://s3eidat.github.io/text-escape/screenshot.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Text Escape", "url": "https://s3eidat.github.io/text-escape/", "description": "Escape and unescape strings for code. Free, private and runs 100% in your browser: no sign-up, no uploads.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (web browser)", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "image": "https://s3eidat.github.io/text-escape/screenshot.png", "author": {"@type": "Person", "name": "s3eidat", "url": "https://github.com/s3eidat"}}</script>
+<!--/s3:seo-->
+</head>
+<body data-tool="text-escape">
+<main class="s3-main">
+  <section class="s3-hero">
+    <h1>Text Escape</h1>
+    <p>Escape or unescape text for JSON, JavaScript, HTML, XML, URLs, SQL, CSV, regex, shell, C, Java and Unicode, live as you type.</p>
+  </section>
+
+  <section class="card stack">
+    <div class="seg te-modes" id="mode" role="group" aria-label="Format"></div>
+    <div class="row between">
+      <div class="row">
+        <div class="seg" id="dir" role="group" aria-label="Direction">
+          <button aria-pressed="true" data-v="esc">Escape</button>
+          <button aria-pressed="false" data-v="unesc">Unescape</button>
+        </div>
+        <button class="btn small" id="swap" title="Use the output as input and flip direction"><svg class="i"><use href="#i-refresh"/></svg>Swap</button>
+      </div>
+      <div class="row te-opts" id="opts"></div>
+    </div>
+    <div class="grid-2">
+      <label class="field"><span id="inLabel">Text</span>
+        <textarea class="textarea" id="input" dir="auto" spellcheck="false" placeholder="Type or paste text"></textarea>
+      </label>
+      <div class="field te-outf">
+        <div class="row between"><span id="outLabel">Escaped</span>
+          <div class="row">
+            <button class="btn ghost small" id="sample">Sample</button>
+            <button class="btn small" id="copy"><svg class="i"><use href="#i-copy"/></svg>Copy</button>
+          </div>
+        </div>
+        <textarea class="textarea" id="output" dir="auto" spellcheck="false" readonly></textarea>
+      </div>
+    </div>
+    <div class="row"><span class="chip" id="status">Waiting for text</span><span class="faint" id="info"></span><span class="faint" id="note"></span></div>
+  </section>
+
+  <section class="card stack mt">
+    <h2>Escaped in every format <small>click a row to copy</small></h2>
+    <div class="tbl-wrap"><table class="tbl te-all" id="all"></table></div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

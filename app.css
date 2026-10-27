@@ -1,0 +1,13 @@
+.te-modes { width: 100%; }
+.te-modes button { flex: 1 1 auto; }
+.te-opts { gap: 12px; }
+.te-sel { width: auto; min-height: 34px; padding-top: 5px; padding-bottom: 5px; font-size: 13px; }
+#input, #output { min-height: 240px; font-variant-ligatures: none; font-feature-settings: "liga" 0, "calt" 0; }
+.te-outf { display: grid; gap: 6px; font-size: 12.5px; font-weight: 600; color: var(--text-2); }
+.te-outf > .row { min-height: 30px; }
+.grid-2 > label.field > span:first-child { min-height: 30px; display: flex; align-items: center; }
+.te-all th { width: 1%; white-space: nowrap; vertical-align: top; text-transform: none; letter-spacing: 0; font-size: 12.5px; color: var(--text-2); }
+.te-all td { white-space: pre-wrap; word-break: break-all; font-size: 12.5px; }
+.te-all tr { cursor: pointer; }
+.te-all tr:hover td, .te-all tr:hover th { color: var(--accent); }
+.te-all td.empty { cursor: default; }
